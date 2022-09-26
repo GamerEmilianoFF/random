@@ -21761,6 +21761,7 @@
 
 --Pre--
 
+
 local NotifyLib =  loadstring(game:HttpGet("https://pastebin.com/raw/ST4wE4Ra"))()
 
 NotifyLib.prompt('Trip Hub', 'thanks for buy Trip Hub Premiun', 3)
@@ -23070,6 +23071,72 @@ end)
 
 
 
+local Section = Tab:NewSection("Esp Fill")
+
+
+Section:NewToggle("Esp fill", "esp fill", function(state)
+    if state then
+getgenv().enabled = state --Toggle on/off
+getgenv().filluseteamcolor = false --Toggle fill color using player team color on/off
+getgenv().outlineuseteamcolor = false --Toggle outline color using player team color on/off
+getgenv().fillcolor = Color3.new(0, 0, 0) --Change fill color, no need to edit if using team color
+getgenv().outlinecolor = Color3.new(1, 1, 1) --Change outline color, no need to edit if using team color
+getgenv().filltrans = 5 --Change fill transparency
+getgenv().outlinetrans = 0 
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+    else
+getgenv().enabled = state 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+
+     end
+end)
+
+
+
+Section:NewToggle("filluse teamcolor", "filluse teamcolor", function(state)
+    if state then
+getgenv().filluseteamcolor = state
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+    else
+getgenv().filluseteamcolor = state
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+    end
+end)
+
+
+
+
+Section:NewToggle("outlineuse teamcolor", "outlineuse teamcolor", function(state)
+    if state then
+getgenv().outlineuseteamcolor = state
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+    else
+getgenv().outlineuseteamcolor = state
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/esp/main/esp.lua"))()
+    end
+end)
+
+
+
+
+
+
+Section:NewColorPicker("Esp fill Color", "esp fill", Color3.fromRGB(1,1,1), function(cpp)
+
+getgenv().outlinecolor = cpp
+
+
+end)
+
+
+
+
+
 local Tab = Window:NewTab("Locks")
 local Section = Tab:NewSection("Aim lock")
 
@@ -23112,7 +23179,7 @@ Section:NewButton("Temporal X v2.0.3","pc", function(value)
 
 Section:NewLabel("Locks By Trip Hub (MOB)")
 
-Section:NewButton("Lock dot (pc/mob)", "BY Space#0234 and owner the script", function()
+Section:NewButton("Lock dot (pc/mob)", "BY Space#0234 and owner of the script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/main/lock/lock%20circle", true))()
 end)
@@ -23157,7 +23224,7 @@ Section:NewButton("silent (90)","90", function(value)
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerEmilianoFF/silent/main/silent%2090'))()
    end)
    
-Section:NewButton("silent (50)","80", function(value)
+Section:NewButton("silent (50)","50", function(value)
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/GamerEmilianoFF/silent/main/silent%2050'))()
    end)
