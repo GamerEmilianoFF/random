@@ -21762,6 +21762,7 @@
 
 
 
+
 local NotifyLib =  loadstring(game:HttpGet("https://pastebin.com/raw/ST4wE4Ra"))()
 
 NotifyLib.prompt('Trip Hub', 'thanks for buy Trip Hub Premiun', 3)
@@ -21772,8 +21773,9 @@ NotifyLib.prompt('Trip Hub', 'Enjoy Trip Hub Premiun', 3)
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/4pBajfB6"))()
 
-local Window = Library.CreateLib("Trip Hub", "Sentinel")
+local Window = Library.CreateLib("Trip Hub Premiun                                    discord.gg/79fKXVuJfr", "Sentinel")
 
+   
 
 local Tab = Window:NewTab("Main")
 
@@ -24322,8 +24324,8 @@ end)
 
 
 
---check 2
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts/main/check"))()
+--noti owner
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts/main/theow.lua"))()
 
 
 _G.Rainbow_Enabled = false -- enables rainbow line
