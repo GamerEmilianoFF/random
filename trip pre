@@ -21760,6 +21760,8 @@
 
 
 
+
+
 local NotifyLib =  loadstring(game:HttpGet("https://pastebin.com/raw/ST4wE4Ra"))()
 
 NotifyLib.prompt('Trip Hub', 'thanks for buy Trip Hub Premiun', 3)
@@ -21828,7 +21830,7 @@ Section:NewButton("Speed KeyBind (C)", "Key (C)", function()
        --end
 end)
 
-Section:NewSlider("Speed Slider", "Speed Slider", 400, 0, function(value) 
+Section:NewSlider("Speed Slider", "Speed Slider", 350, 0, function(value) 
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     plr = game:GetService('Players').LocalPlayer
  
@@ -21942,18 +21944,24 @@ Section:NewSlider("CFrame Speed ", "", 5, 0, function(s)
     getgenv().Multiplier = s
 end)
 
+Section:NewButton("CFrame Speed Button (MOB)", "for Mob", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts/main/CFrame%20toggle.lua",true))()
+
+end)
+
 
 local Section = Tab:NewSection("Speed (For mobile)")
 
 
 
-Section:NewButton("Speed Button", "for Mob", function()
+Section:NewButton("Speed Button (MOB)", "for Mob", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/madebyemiliano/main/Speed%20bypass",true))()
 
 end)
 
-Section:NewButton("Speed Toggle", "for Mob", function()
+Section:NewButton("Speed Toggle (MOB)", "for Mob", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/toggles_speed/main/Speed",true))()
 
@@ -22005,11 +22013,9 @@ Section:NewButton("anti stomp (k)","pc",  function(value)
         
         lol.InputBegan:Connect(function(key)
                 if key.KeyCode == tecla then
-        game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-        game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-        game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts_v2/main/anti%20stomp",true))()
+
              end
         end)
     end)
@@ -22021,12 +22027,8 @@ Section:NewButton("anti stomp (k)","pc",  function(value)
         
         lol.InputBegan:Connect(function(key)
                 if key.KeyCode == tecla then
-        game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-        game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-        game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
-             end
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts_v2/main/anti%20stomp",true))()
+end
         end)
     end)
     
@@ -22037,15 +22039,11 @@ Section:NewButton("anti stomp (k)","pc",  function(value)
         
         lol.InputBegan:Connect(function(key)
                 if key.KeyCode == tecla then
-        game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-        game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-        game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts_v2/main/anti%20stomp",true))()
+
              end
         end)
     end)
-    
     
     Section:NewButton("anti stomp (h)","pc", function(value)
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
@@ -22054,11 +22052,8 @@ Section:NewButton("anti stomp (k)","pc",  function(value)
         
         lol.InputBegan:Connect(function(key)
                 if key.KeyCode == tecla then
-        game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-        game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-        game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts_v2/main/anti%20stomp",true))()
+
              end
         end)
     end)
@@ -22070,16 +22065,13 @@ Section:NewButton("anti stomp (k)","pc",  function(value)
         
         lol.InputBegan:Connect(function(key)
                 if key.KeyCode == tecla then
-        game.Players.LocalPlayer.Character.UpperTorso:Destroy()
-        game.Players.LocalPlayer.Character.LeftUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.RightUpperLeg:Destroy()
-        game.Players.LocalPlayer.Character.LeftLowerArm:Destroy()
-        game.Players.LocalPlayer.Character.RightLowerArm:Destroy()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts_v2/main/anti%20stomp",true))()
+
              end
         end)
     end)
 
-Section:NewButton("anti stomp (New) (L)","pc", function(value)
+Section:NewButton("anti stomp (New) (H)","pc", function(value)
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
       local tecla = Enum.KeyCode.H
         local lol = game:GetService("UserInputService")
@@ -22092,7 +22084,7 @@ game.Players.LocalPlayer.Character.Head.NeckRigAttachment:Destroy()
         end)
     end)
 
-Section:NewButton("Anti Stomp Button", "For Mob", function()
+Section:NewButton("Anti Stomp Button (MOB)", "For Mob", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/scripts/main/anti%20stomp%20button",true))()
 
@@ -22119,7 +22111,7 @@ Section:NewToggle("dark chat","enjoy", function(value)
        game.Players.LocalPlayer.Information.DarkChat.Value = value
     end)
 
-Section:NewButton("Trash Talk Button", "For Mob", function()
+Section:NewButton("Trash Talk Button (MOB)", "For Mob", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/GamerEmilianoFF/main/trash%20gui",true))()
 
@@ -22129,13 +22121,13 @@ end)
 local Section = Tab:NewSection("Jumps Mods")
 
 
-Section:NewButton("No Limits Jumps", "Destroy 3 Jumps Limits", function()
+Section:NewButton("No Limits Jumps ", "Destroy 3 Jumps Limits", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/infinite_jumps/main/Jumps",true))()
 
 end)
 
-Section:NewButton("Inf Jumps", "Jump for fly", function()
+Section:NewButton("Inf Jumps (MOB)", "Jump for fly", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
 
     local InfiniteJumpEnabled = true
@@ -22153,7 +22145,41 @@ Section:NewButton("Inf Jumps", "Jump for fly", function()
 end)
 
 
+Section:NewButton("inf jump (PC)", "you can jump how many times you want", function()
+
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+
+_G.JumpHeight = 50;
+
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
 local Section = Tab:NewSection("Other Mods")
+
+
+
+
+Section:NewButton("inf zoom", "inf zoom", function()
+game:GetService("Players").LocalPlayer.CameraMaxZoomDistance = math.huge
+     game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Top.Visible = false
+     game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Right.Visible = false
+     game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Left.Visible = false
+     game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Bottom.Visible = false 
+end)
+
 
 Section:NewButton("Dot Crosshair", "Dot Crosshair", function()
  game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.Aim.Visible = L_178_arg0
@@ -22181,16 +22207,25 @@ Section:NewButton("Anti Flashbang", "AntiFlashBang", function()
 		end
 end)
 
-Section:NewToggle("Auto-stomp", "auto-stomp", function(state)
-    if state then
-
+Section:NewButton("Auto Stomp", "AutoStomp", function()
 _G.stompem = true
+        while _G.stompem do
         wait()
         game.ReplicatedStorage.MainRemote:FireServer("Stomp")
-
-    else
-        _G.stompem = false
 end
+end)
+Section:NewButton("Disable Auto Stomp", "AutoStomp", function()
+_G.stompem = false
+end)
+    
+    
+
+game:GetService("RunService").RenderStepped:Connect(function()
+	if getgenv().Toggled then
+		toggle:UpdateToggle("Toggle On")
+	else
+		toggle:UpdateToggle("Toggle Off")
+	end
 end)
 
 Section:NewButton("Spin (F)","pc", function(value)
@@ -23176,6 +23211,10 @@ Section:NewButton("Temporal X v2.0.3","pc", function(value)
 
 Section:NewLabel("Locks By Trip Hub (MOB)")
 
+Section:NewButton("Lock dot (pc/mob)", "BY Space#0234 and owner of the script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/main/lock/lock%20circle", true))()
+end)
 
 Section:NewButton("Lock-Trip", "BY Space#0234", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
@@ -23189,23 +23228,22 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/m
 end)
 
 
-Section:NewButton("hitbox (pc/mob)", "BY Space#0234", function()
+Section:NewButton("hitbox (pc/mob)", "BY Space#0234 and owner of the script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/main/hitbox.lua", true))()
-
 end)
 
-Section:NewButton("Lock Dot Blue (pc/mob)", "BY Space#0234", function()
+
+Section:NewButton("Dot Blue(pc/mob)", "BY Space#0234 and owner of the script", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/main/dot_blue.lua", true))()
-
 end)
 
 
-Section:NewButton("Lock dot (pc/mob)", "BY Space#0234 and owner of the script", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/d1rMxaf9",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerEmilianoFF/aim/main/lock/lock%20circle", true))()
-end)
+
+
+
+
 
 
 Section:NewLabel("Silent Aim")
